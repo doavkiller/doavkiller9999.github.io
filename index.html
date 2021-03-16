@@ -1,440 +1,492 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <title>bootstrap 4</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="container">
-          <ul class="menu">
-            <li class="menu_item">
-              <a href="#" class="menu_link">ТЕРЬ НЕ ГЛАВНАЯ</a>
-            </li>
-            <li class="menu_item">
-              <a href="#requare" class="menu_link">Со своим автомобилем</a>
-            </li>
-            <li class="menu_item">
-              <a href="#requare" class="menu_link">На автомобиле компании</a>
-            </li>
-            <li class="menu_item">
-              <a href="#" class="menu_link">Требования</a>
-            </li>
-            <li class="menu_item">
-              <a href="#" class="menu_link">Контакты</a>
-            </li>
-            <li class="menu_item">
-              <a href="#" class="menu_link">Оставить заявку</a>
-            </li>
-          </ul>
-        </div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-      <div class="subheader">
-        <div class="container">
-          <div class="row">
-            <div class="col-6 col-md-4 offset-md-1">
-              <a href="#" class="subheader_logo"
-                ><img src="icons/logo.png" alt="logo"
-              /></a>
-              <div class="subheader_official">
-                Официальный партнер Uber в Москве
-              </div>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>GazenSup projects - Главная страница</title>
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+        <a class="logo__link" href="">
+            <img class="logo__img" src="assets/img/header-bg.jpg" alt="Логотип" title="на главную" width="2560"
+                height="469">
+        </a>
+    </div>
+    <div class="menu__external">
+        <div class="container-inner">
+            <div class="menu-container">
+                <div class="menu-toogle">
+                    <input id="toggle" type="checkbox">
+                    <label class="toggle-label" for="toggle">
+                    <div class="toggle-line">
+                        <div class="toggle-line__line first"></div>
+                        <div class="toggle-line__line second"></div>
+                        <div class="toggle-line__line third"></div>
+                    </div>
+                        <div class="toggle__text">GAZMENU</div>
+                    </label>
+                <ul class="menu border-menu">
+                    <li class="menu__item"><a href="#" class="menu__link">GAZNEWS</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">GAZVIDEO</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">GAZAUDIO</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">GAZFOTO</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">GAZFANS</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">GAZРЕПА</a></li>
+                </ul>
             </div>
+            <a href="index.html" class="menu-logo visiabilyty-hidden"><img class="logo-mobile" src="assets/img/logo-mobile.png" alt="на главную"></a>
+            <div class="substrate"></div>
+            <button class="set-icons__btn visiabilyty-hidden">
+                <svg class="set-icons__img" width="40" height="40">
+                    <use xlink:href="sprite.symbol.svg#set-icons"></use>
+                </svg></button>
+                <div class="menu-icon visiabilyty-hidden">
+                    
+                    <a href="#">
+                    <svg class="menu-icon__img mail__img" width="20" height="20">
+                        <use xlink:href="sprite.symbol.svg#message"></use>
+                    </svg></a>
+                    <a href="#">
+                    <svg class="menu-icon__img music__img" width="20" height="20">
+                        <use xlink:href="sprite.symbol.svg#music"></use>
+                    </svg></a>
+                    <a href="#">
+                    <svg class="menu-icon__img photo__img" width="20" height="20">
+                        <use xlink:href="sprite.symbol.svg#photo"></use>
+                    </svg>
+                </a>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+</header>
+    <div class="toggle__sidebar-background">
+    <div class="toggle__sidebar-container"></div></div>
+    <div class="container">
+        <div class="wrapper">
+            
+<aside class="sidebar">
+    <div class="autorization visiabilyty-hidden">
+        <p class="autorization__info">Вы не авторизированы на сайте</p>
+        <button class="autorization__btn">Вход</button>
+        <button class="autorization__btn">Регистрация</button>
+    </div>
 
-            <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
-              <div class="subheader_call">Звоните нам ежедневно</div>
-              <a href="tel:84957970988" class="subheader_phone"
-                >8 495 797 09 88</a
-              >
-            </div>
-
-            <div class="col-6 col-md-3 col-lg-2">
-              <a href="tel:84957970988" class="subheader_phone xs-visiable"
-                >8 495 797 09 88</a
-              >
-              <button class="subheader_btn">заказать звонок</button>
-            </div>
-          </div>
+    <div class="autorization autorization-active">
+        <p class="autorization__info">Добро пожаловать <a href="#" class="autorization__name">admin</a></p>
+        <div class="autorization__avatar avatar">
+            <img class="avatar__img" src='assets/img/admin.jpg' alt='Аватар' width="50">
         </div>
-      </div>
-    </header>
-
-    <section class="promo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-lg-10 offset-lg-1">
-            <h1 class="promo_header">КОМПАНИЯ UBER PARTNERS!</h1>
-            <h2 class="promo_subheader">
-              ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
-            </h2>
-            <div class="promo_descr">
-              Компания UBER динамически развивающаяся. Компания на рынке
-              занимает лидирующее место среди таксомоторных компаний, Компания
-              абсолютно прозрачная вы можете контролировать все процессы у себя
-              в личном кабинете. Бонуcная система.Помимо выполненной работы по
-              заказам, компания начисляет бонусы за пиковое время.
-              <br /><br />
-              Мы одни из партнеров и зарекомендовали себя как одна из лучших
-              команд в городе Москве. Водители у нас зарабатывают от 80000-
-              120000 в месяц.
-            </div>
-            <button class="promo_btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
-          </div>
+        <button class="autorization__btn">Профиль</button>
+        <button class="autorization__btn">Сообщения</button>
+    </div>
+    <section class="sidebar__section last-video">
+        <h3 class="last-video__title title">Последнее видео:</h3>
+        <div class="last-video__content">
+            <a class="last-video__name" href="#" title="перейти к видео">
+                >GazenSup - «Коронавирус»
+            
+            <!-- Завернуть в Picture -->
+            <img src="assets/img/boiler.gif" alt="последнее видео" 
+            class="last-video__gif" width="200" height="200">
+        </a>
         </div>
-      </div>
+        <p class="last-video__info">
+            Зловещее параноидальное видео на композицию «Коронавирус» от инфекционно-инструментального психоделик-панк
+            ансамбля GazenSup, участники которого традиционно любят все болезнетворное и крайне заразное, как и их
+            творчество.
+        </p>
     </section>
 
-    <section class="reasons">
-      <div class="container">
-        <div class="label">преимущества</div>
-        <h2 class="title">8 причин начать работать с нами</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="reasons_block">
-              <div class="reasons_round">
-                <img src="icons/cause8/1.png" alt="reason" />
-              </div>
-              <div class="reasons_descr">
-                <div class="reasons_subtitle">
-                  Никаких наличных, оплата происходит автоматически
-                </div>
-                <div class="reasons_text">
-                  Стоимость поездки оплачивается пассажиром с привязанной
-                  банковской карты, т.е. нет никаких рисков связанных с
-                  перевозкой наличности как для пассажира, так и для водителя,
-                  Вам не нужно искать мелкие деньги для размена.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="reasons_block">
-              <div class="reasons_round">
-                <img src="icons/cause8/2.png" alt="reason" />
-              </div>
-              <div class="reasons_descr">
-                <div class="reasons_subtitle">Комиссия 8% + БОНУСЫ</div>
-                <div class="reasons_text">
-                  У нас минимальная комиссия и мы выплачиваем бонусы за каждую
-                  поездку, некоторые наши конкуренты оставляют бонусы себе. Мы
-                  работаем честно и с нами водители зарабатывают больше!
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="reasons_block">
-              <div class="reasons_round">
-                <img src="icons/cause8/3.png" alt="reason" />
-              </div>
-              <div class="reasons_descr">
-                <div class="reasons_subtitle">
-                  Высокий доход с гарантированными выплатами
-                </div>
-                <div class="reasons_text">
-                  Мы выплачиваем заработную плату на личную банковскую карту
-                  водителя! Вам не нужно оформлять ООО, ИП, платить налоги,
-                  подавать декларацию, оплачивать бухгалтерские услуги и ведение
-                  банковского счета.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="reasons_block">
-              <div class="reasons_round">
-                <img src="icons/cause8/4.png" alt="reason" />
-              </div>
-              <div class="reasons_descr">
-                <div class="reasons_subtitle">
-                  Работа в удобное время, никаких графиков
-                </div>
-                <div class="reasons_text">
-                  Вы просто нажимаете кнопку выйти на линию для начала работы,
-                  когда решите закончить, нажимаете выйти с линии. Вы можете
-                  подрабатывать только утром, вечером, в выходные или
-                  праздничные дни!
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="reasons_block">
-              <div class="reasons_round">
-                <img src="icons/cause8/5.png" alt="reason" />
-              </div>
-              <div class="reasons_descr">
-                <div class="reasons_subtitle">
-                  Комфортное, прозрачное и простое подключение
-                </div>
-                <div class="reasons_text">
-                  Мы подключаем дистанционно и бесплатно, Вам нет необходимости
-                  приезжать к нам! Вы присылаете нам копии документов, мы
-                  регистрируем Вас и присылаем данные для подключения, через 1-2
-                  дня Вы можете начинать работать!
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="reasons_block">
-              <div class="reasons_round">
-                <img src="icons/cause8/6.png" alt="reason" />
-              </div>
-              <div class="reasons_descr">
-                <div class="reasons_subtitle">
-                  Всегда большое количество заказов
-                </div>
-                <div class="reasons_text">
-                  Приложение показывает, где на данный момент больше всего
-                  заказов и где действуют повышенные тарифы. У Вас не будет
-                  простоя и холостых пробегов. Наши пассажиры всегда приятные и
-                  абсолютно неконфликтные люди, которых приятно возить.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="reasons_block">
-              <div class="reasons_round">
-                <img src="icons/cause8/7.png" alt="reason" />
-              </div>
-              <div class="reasons_descr">
-                <div class="reasons_subtitle">Круглосуточная поддержка</div>
-                <div class="reasons_text">
-                  В Uber действует круглосуточная поддержка водителей по
-                  электронной почте. Если что-то непонятно, Вы всегда можете
-                  задать вопрос через On-line консультацию.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="reasons_block">
-              <div class="reasons_round">
-                <img src="icons/cause8/8.png" alt="reason" />
-              </div>
-              <div class="reasons_descr">
-                <div class="reasons_subtitle">Без шашечек и наклеек</div>
-                <div class="reasons_text">
-                  Вам не нужно менять цвет, устанавливать «шашки» на автомобиль
-                  и обклеивать его наклейками.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+    <section class="sidebar__section alboms">
+        <h3 class="alboms__title title">Альбомы</h3>
+        <ul class="alboms__content">
+
+            <li class="albom">
+                <a href="#" class="albom__link">
+                    <div class="albom__info">
+                <h4 class="albom__title">«НОЧНЫЕ ДОРОГИ» «СТРЕЛОК»!</h4>
+                <p class="albom__text">
+                    Обновленная версия альбома «Ночные дороги» проекта «Стрелок». Это сольная работа Вячеслава «Славца»
+                    Логачева — лидера психоделик-панк труппы GazenSup и бас-гитариста хэви-рок-бэнда 50 Hz.</p></div>
+                    <!-- Завернуть в Picture -->
+                    <img src="assets/img/gazensup.jpg" alt="альбом" class="albom__img" width="200" height="200">
+                    
+                </a>
+                <button class="albom__btn visiabilyty-hidden">Показать описание</button>
+            </li>
+
+            <li class="albom">
+                <a href="#" class="albom__link">
+                    <div class="albom__info">
+                        <h4 class="albom__title">«НОЧНЫЕ ДОРОГИ» «СТРЕЛОК»!</h4>
+                        <p class="albom__text">
+                            Обновленная версия альбома «Ночные дороги» проекта «Стрелок». Это сольная работа Вячеслава «Славца»
+                            Логачева — лидера психоделик-панк труппы GazenSup и бас-гитариста хэви-рок-бэнда 50 Hz.</p></div>
+                    <!-- Завернуть в Picture -->
+                    <img src="assets/img/gazensup.jpg" alt="альбом" class="albom__img" width="200" height="200">
+                   
+                </a>
+                <button class="albom__btn visiabilyty-hidden">Показать описание</button>
+            </li>
+
+            <li class="albom">
+                <a href="#" class="albom__link">
+                    <div class="albom__info">
+                        <h4 class="albom__title">«НОЧНЫЕ ДОРОГИ» «СТРЕЛОК»!</h4>
+                        <p class="albom__text">
+                            Обновленная версия альбома «Ночные дороги» проекта «Стрелок». Это сольная работа Вячеслава «Славца»
+                            Логачева — лидера психоделик-панк труппы GazenSup и бас-гитариста хэви-рок-бэнда 50 Hz.</p></div>
+                
+                    <!-- Завернуть в Picture -->
+                    <img src="assets/img/gazensup.jpg" alt="альбом" class="albom__img" width="200" height="200">
+                   
+                </a>
+                 <button class="albom__btn visiabilyty-hidden">Показать описание</button>
+            </li>
+
+        </ul>
     </section>
-    <section class="mobile">
-      <div class="container">
-        <div class="label">Возможности</div>
-        <div class="title">мобильное приложение убер</div>
-        <div class="subtitle">
-          Сделайте заказ, совершите поездку и оплатите ее стоимость, используя
-          свой мобильный телефон
-        </div>
-        <div class="row">
-          <div
-            class="col-12 col-md-6 col-lg-5 offset-lg-1 col-xl-4 offset-xl-0"
-          >
-            <div class="mobile_item mobile_item_1">
-              <div class="mobile_item_subtitle">
-                оформление заказа одним касанием
-              </div>
-              <div class="mobile_item_plus"></div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-            <div class="mobile_item mobile_item_2">
-              <div class="mobile_item_subtitle">надежная подача</div>
-              <div class="mobile_item_plus"></div>
-            </div>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-5 offset-lg-1 col-xl-4 offset-xl-0"
-          >
-            <div class="mobile_item mobile_item_3">
-              <div class="mobile_item_subtitle">прозрачные цены</div>
-              <div class="mobile_item_plus"></div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-            <div class="mobile_item mobile_item_4">
-              <div class="mobile_item_subtitle">безналичная оплата</div>
-              <div class="mobile_item_plus"></div>
-            </div>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-5 offset-lg-1 col-xl-4 offset-xl-0"
-          >
-            <div class="mobile_item mobile_item_5">
-              <div class="mobile_item_subtitle">обратная связь</div>
-              <div class="mobile_item_plus"></div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-            <div class="mobile_item mobile_item_6">
-              <div class="mobile_item_subtitle">
-                разделить стоимость поездки
-              </div>
-              <div class="mobile_item_plus"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+    <section class="sidebar__section recommend">
+        <h3 class="recommend__title title">Рекомендуем</h3>
+        <ul class="recommend__list">
+            <li class="recommend__item"><a href="#" class="recommend__link">
+                    "Кровавая" днюха Черной лягушки
+                </a></li>
+            <li class="recommend__item"><a href="#" class="recommend__link">
+                    Газенсуповцы спасают мир от Большого Песца
+                </a></li>
+            <li class="recommend__item"><a href="#" class="recommend__link">
+                    К 30-летию открытия первого "Макдональдс" в России
+                </a></li>
+            <li class="recommend__item"><a href="#" class="recommend__link">
+                    В гостях у Злодея
+                </a></li>
+        </ul>
     </section>
-    <section class="choice">
-      <div class="choice_header">
-        <div class="label">Возможности</div>
-        <div class="title">Выбор - отличная штука!</div>
-        <div class="subtitle">
-          Закажите автомобиль, который подходит вам по стилю и бюджету
+</aside>
+                <main class="main">
+    <article class="news">
+    <div class="news__container">
+        <h2 class="news__title">
+            <a class="title__link" href="pages/full-news.html">
+                GAZENSUP спели о загубленном детстве</a></h2>
+        <ul class="news__info">
+            <li class="name">
+                <svg class="name__img" width="20" height="20">
+                    <use xlink:href=
+                    "sprite.symbol.svg#user"></use>
+                </svg>
+                <a class="name__link" href="#">Admin</a>
+            </li>
+            <li class="date">
+                <a href="#" class="date__link">
+                    <svg class="date__img" width="20" height="20">
+                        <use xlink:href=
+                        "sprite.symbol.svg#calendar"></use>
+                    </svg>
+                    <time datetime="2020-12-11T18:18:18+04:00">
+                        22.12.2020
+                    </time>
+                </a>
+            </li>
+        </ul>
+        <div class="news-content">
+            <div class="text-content">
+                <p class="text-content__text">Неистовая psychopunk труппа GAZENSUP, замутившая 25 декабря в клубе
+                    RAZGRUZKA мощный фестиваль
+                    ROZHDESTVO LIVE!, в одной из исполненных там композиций подвергла резкой критике систему
+                    школьного образования.</p>
+
+                <p class="text-content__text">Песня "Три окна" была особенно тепло встречена присутствующими, многие
+                    из которых похоже, в свое
+                    время немало натерпелись от разнузданных училок с больно бьющей указкой из деревяшки....</p>
+
+                <p class="text-content__text">Также можно посмотреть на нашем YouTube канале -
+                    <a class="text-content__link"
+                        href="https://www.youtube.com/playlist?list=PLVvumeo0zE05shCwJk2e-kplYcGWVWuXF">https://youtube.com/playlist?list=PLVvumeo0zE05shCwJk..</a></p>
+                <p class="text-content__text">
+                    <a class="text-content__link" 
+                    href="https://vk.com/video-155983471_456239060">
+                        https://vk.com/video-155983471_456239060
+                    </a>
+                </p>
+                <p class="text-content__text">
+                    <a class="text-content__link" 
+                    href="https://vk.com/feed?q=%23RAZGRUZKA&section=search">#RAZGRUZKA</a>
+                    <a class="text-content__link" 
+                    href="https://vk.com/feed?c%5Bq%5D=%23GAZENSUP&section=search">#GAZENSUP</a>
+                </p>
+            </div>
+            <div class="video-content">
+                <div class="video-content__wrapper">
+                <iframe id="video-content__video" class="video-content__video"
+                    src="https://vk.com/video_ext.php?oid=-155983471&id=456239060&hash=1fcc579f5c44e9d3&hd=2"
+                     allowfullscreen></iframe></div>
+                <p class="video-content__description"></p>
+            </div>
         </div>
-        <div class="choice_header_img">
-          <img src="img/car.png" alt="car" />
-          <div class="choice_header_img_subheader">
-            Машины на каждый день. Лучше, быстрее и дешевле, чем такси
-          </div>
+        <div class="news__description">
+            <div class="likes">
+                
+                <button class="likes__btn">
+                    <svg class="likes__img" width="20" height="20">
+                    <use xlink:href=
+                    "sprite.symbol.svg#like"></use>
+                </svg>25</button>
+            </div>
+            <div class="share">
+                
+                <button class="share__btn"><svg class="share__img" width="20" height="20">
+                    <use xlink:href=
+                    "sprite.symbol.svg#share"></use>
+                </svg>4</button>
+            </div>
         </div>
-      </div>
-      <div class="choice_bottom"></div>
-    </section>
-    <section class="requare" id="requare">
-      <div class="container">
-        <div class="label">возможности</div>
-        <h2 class="title">условия и требования</h2>
-        <div class="row">
-          <div class="col-sm-11 col-md-6">
-            <div class="requare_block">
-              <div class="requare_title">УСЛОВИЯ: со своим авто:</div>
-              <ul class="requare_list">
-                <li>Подключаем к системе UBER под 10%.</li>
-                <li>Ни каких взносов 0%!</li>
-                <li>Можем подключать удаленно без приезда в офис</li>
-                <li>ИП не требуется</li>
-                <li>
-                  Заказы распределяются без учета рейтинга ближай-<br />шим
-                  водителям
-                </li>
-                <li>Работа только по безналичному расчету</li>
-                <li>
-                  Деньги перечисляем на карту водителю или наличны-<br />ми в
-                  офисе
-                </li>
-              </ul>
-              <div class="requare_descr">
-                В день заработок составляет 7000-12000р + бонус 3000т рублей
-              </div>
+    </div>
+</article>
+    <article class="news">
+    <div class="news__container">
+        <h2 class="news__title">
+            <a class="title__link" href="pages/full-news.html">
+                GAZENSUP спели о загубленном детстве</a></h2>
+        <ul class="news__info">
+            <li class="name">
+                <svg class="name__img" width="20" height="20">
+                    <use xlink:href=
+                    "sprite.symbol.svg#user"></use>
+                </svg>
+                <a class="name__link" href="#">Admin</a>
+            </li>
+            <li class="date">
+                <a href="#" class="date__link">
+                    <svg class="date__img" width="20" height="20">
+                        <use xlink:href=
+                        "sprite.symbol.svg#calendar"></use>
+                    </svg>
+                    <time datetime="2020-12-11T18:18:18+04:00">
+                        22.12.2020
+                    </time>
+                </a>
+            </li>
+        </ul>
+        <div class="news-content">
+            <div class="text-content">
+                <p class="text-content__text">Неистовая psychopunk труппа GAZENSUP, замутившая 25 декабря в клубе
+                    RAZGRUZKA мощный фестиваль
+                    ROZHDESTVO LIVE!, в одной из исполненных там композиций подвергла резкой критике систему
+                    школьного образования.</p>
+
+                <p class="text-content__text">Песня "Три окна" была особенно тепло встречена присутствующими, многие
+                    из которых похоже, в свое
+                    время немало натерпелись от разнузданных училок с больно бьющей указкой из деревяшки....</p>
+
+                <p class="text-content__text">Также можно посмотреть на нашем YouTube канале -
+                    <a class="text-content__link"
+                        href="https://www.youtube.com/playlist?list=PLVvumeo0zE05shCwJk2e-kplYcGWVWuXF">https://youtube.com/playlist?list=PLVvumeo0zE05shCwJk..</a></p>
+                <p class="text-content__text">
+                    <a class="text-content__link" 
+                    href="https://vk.com/video-155983471_456239060">
+                        https://vk.com/video-155983471_456239060
+                    </a>
+                </p>
+                <p class="text-content__text">
+                    <a class="text-content__link" 
+                    href="https://vk.com/feed?q=%23RAZGRUZKA&section=search">#RAZGRUZKA</a>
+                    <a class="text-content__link" 
+                    href="https://vk.com/feed?c%5Bq%5D=%23GAZENSUP&section=search">#GAZENSUP</a>
+                </p>
             </div>
-          </div>
-          <div class="col-sm-11 col-md-6">
-            <div class="requare_block">
-              <div class="requare_title">УСЛОВИЯ: на авто компании:</div>
-              <ul class="requare_list">
-                <li>Предоставляем авто без залога</li>
-                <li>Без ежедневных выплат по аренде</li>
-                <li>
-                  Среда пятница и суббота работа на компанию остальные дни вы
-                  работаете на себя
-                </li>
-              </ul>
+            <div class="video-content">
+                <div class="video-content__wrapper">
+                <iframe id="video-content__video" class="video-content__video"
+                    src="https://vk.com/video_ext.php?oid=-155983471&id=456239060&hash=1fcc579f5c44e9d3&hd=2"
+                     allowfullscreen></iframe></div>
+                <p class="video-content__description"></p>
             </div>
-          </div>
-          <div class="col-sm-11 col-md-6">
-            <div class="requare_block requare_block_nmb warning">
-              <div class="requare_title">ТРЕБОВАНИЕ:</div>
-              <ul class="requare_list">
-                <li>Наличие автомобиля без рекламы</li>
-                <li>
-                  Автомобиль не должен быть желтый и не с желтыми номерами
-                </li>
-                <li>Машина не старше 3 лет</li>
-                <li>Стаж вождения не менее 3 лет</li>
-                <li>Дивайс на системе андроид 4.0и выше(самсунг)</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-11 col-md-6">
-            <div class="requare_block requare_block_nmb warning">
-              <div class="requare_title">ДОКУМЕНТЫ:</div>
-              <ul class="requare_list">
-                <li>Права 2 стороны</li>
-                <li>Паспорт лицевая сторона</li>
-                <li>СтС</li>
-                <li>Лицензия( если есть)</li>
-                <li>Номер телефона</li>
-                <li>Номер карты для перечисления денег(указать в письме)!</li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="map">
-      <div class="label">города</div>
-      <div class="title">По всему миру</div>
-      <div class="subtitle">Мы в вашем городе и по всему миру</div>
-      <div class="map_descr"><a href="#">посмотреть все города</a></div>
-    </section>
+        <div class="news__description">
+            <div class="likes">
+                
+                <button class="likes__btn">
+                    <svg class="likes__img" width="20" height="20">
+                    <use xlink:href=
+                    "sprite.symbol.svg#like"></use>
+                </svg>25</button>
+            </div>
+            <div class="share">
+                
+                <button class="share__btn"><svg class="share__img" width="20" height="20">
+                    <use xlink:href=
+                    "sprite.symbol.svg#share"></use>
+                </svg>4</button>
+            </div>
+        </div>
+    </div>
+</article>
+    <article class="news">
+    <div class="news__container">
+        <h2 class="news__title">
+            <a class="title__link" href="pages/full-news.html">
+                GAZENSUP спели о загубленном детстве</a></h2>
+        <ul class="news__info">
+            <li class="name">
+                <svg class="name__img" width="20" height="20">
+                    <use xlink:href=
+                    "sprite.symbol.svg#user"></use>
+                </svg>
+                <a class="name__link" href="#">Admin</a>
+            </li>
+            <li class="date">
+                <a href="#" class="date__link">
+                    <svg class="date__img" width="20" height="20">
+                        <use xlink:href=
+                        "sprite.symbol.svg#calendar"></use>
+                    </svg>
+                    <time datetime="2020-12-11T18:18:18+04:00">
+                        22.12.2020
+                    </time>
+                </a>
+            </li>
+        </ul>
+        <div class="news-content">
+            <div class="text-content">
+                <p class="text-content__text">Неистовая psychopunk труппа GAZENSUP, замутившая 25 декабря в клубе
+                    RAZGRUZKA мощный фестиваль
+                    ROZHDESTVO LIVE!, в одной из исполненных там композиций подвергла резкой критике систему
+                    школьного образования.</p>
+
+                <p class="text-content__text">Песня "Три окна" была особенно тепло встречена присутствующими, многие
+                    из которых похоже, в свое
+                    время немало натерпелись от разнузданных училок с больно бьющей указкой из деревяшки....</p>
+
+                <p class="text-content__text">Также можно посмотреть на нашем YouTube канале -
+                    <a class="text-content__link"
+                        href="https://www.youtube.com/playlist?list=PLVvumeo0zE05shCwJk2e-kplYcGWVWuXF">https://youtube.com/playlist?list=PLVvumeo0zE05shCwJk..</a></p>
+                <p class="text-content__text">
+                    <a class="text-content__link" 
+                    href="https://vk.com/video-155983471_456239060">
+                        https://vk.com/video-155983471_456239060
+                    </a>
+                </p>
+                <p class="text-content__text">
+                    <a class="text-content__link" 
+                    href="https://vk.com/feed?q=%23RAZGRUZKA&section=search">#RAZGRUZKA</a>
+                    <a class="text-content__link" 
+                    href="https://vk.com/feed?c%5Bq%5D=%23GAZENSUP&section=search">#GAZENSUP</a>
+                </p>
+            </div>
+            <div class="video-content">
+                <div class="video-content__wrapper">
+                <iframe id="video-content__video" class="video-content__video"
+                    src="https://vk.com/video_ext.php?oid=-155983471&id=456239060&hash=1fcc579f5c44e9d3&hd=2"
+                     allowfullscreen></iframe></div>
+                <p class="video-content__description"></p>
+            </div>
+        </div>
+        <div class="news__description">
+            <div class="likes">
+                
+                <button class="likes__btn">
+                    <svg class="likes__img" width="20" height="20">
+                    <use xlink:href=
+                    "sprite.symbol.svg#like"></use>
+                </svg>25</button>
+            </div>
+            <div class="share">
+                
+                <button class="share__btn"><svg class="share__img" width="20" height="20">
+                    <use xlink:href=
+                    "sprite.symbol.svg#share"></use>
+                </svg>4</button>
+            </div>
+        </div>
+    </div>
+</article>
+    
+    <div class="pages">
+    <a href="" class="pages__prev">
+        <svg class="pages__img" width="20" height="20">
+            <use xlink:href=
+            "sprite.symbol.svg#arrow"></use>
+        </svg>
+        <p class="pages__text">Преведущая</p>
+    </a>
+    <a href="" class="pages__link">1</a>
+    <a href="" class="pages__link active">2</a>
+    <a href="" class="pages__link">3</a>
+    <a href="" class="pages__link">4</a>
+    <a href="" class="pages__link">5</a>
+    <a href="" class="pages__next">
+        <p class="pages__text">Следующая</p>
+        <svg class="pages__img" width="20" height="20">
+            <use xlink:href=
+            "sprite.symbol.svg#arrow"></use>
+        </svg>
+    </a>
+</div>
+    </main>
+        </div>
+    </div>
     <footer class="footer">
-      <div class="footer_networks">
-        <a href="#" class="footer_networks_item"
-          ><i class="icon-facebook"></i
-        ></a>
-        <a href="#" class="footer_networks_item"
-          ><i class="icon-twitter"></i
-        ></a>
-        <a href="#" class="footer_networks_item"
-          ><i class="icon-linkedin"></i
-        ></a>
-        <a href="#" class="footer_networks_item"
-          ><i class="icon-instagram"></i
-        ></a>
-      </div>
-      <div class="footer_menu">
-        <div class="footer_menu_band"></div>
-        <ul class="footer_menu_title">
-          <li><a href="#">на главную</a></li>
-          <li><a href="#">города</a></li>
-          <li><a href="#">для водителей</a></li>
+    <div class="container-inner">
+        <ul class="footer-list">
+            <li class="footer-list__elements">
+                <a href="#" class="footer-list__link">GazNews</a></li>
+            <li class="footer-list__elements">
+                <a href="#" class="footer-list__link">GazPhoto</a></li>
+            <li class="footer-list__elements">
+                <a href="#" class="footer-list__link">GazVideo</a></li>
+            <li class="footer-list__elements">
+                <a href="#" class="footer-list__link">GazAudio</a></li>
+            <li class="footer-list__elements">
+                <a href="#" class="footer-list__link">GazRepa</a></li>
+            <li class="footer-list__elements">
+                <a href="#" class="footer-list__link">GazFans</a></li>
         </ul>
-        <ul class="footer_menu_subtitle">
-          <li><a href="#">центр поддержки</a></li>
-          <li><a href="#">вакансии</a></li>
-          <li><a href="#">разработчики</a></li>
-          <li><a href="#">блог</a></li>
-          <li><a href="#">о нас</a></li>
-        </ul>
-        <a class="footer_menu_language" href="#">русский</a>
-      </div>
-      <div class="footer_app">
-        <a href="#" class="footer_app_item"
-          ><img src="icons/program/app.png" alt="apple"
-        /></a>
-        <a href="#" class="footer_app_item"
-          ><img src="icons/program/google.png" alt="google"
-        /></a>
-        <a href="#" class="footer_app_item"
-          ><img src="icons/program/windows.png" alt="windows"
-        /></a>
-      </div>
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
+        <div class="footer__copy">
+            &#169; Все права защищены GazenSup 2020
+        </div>
+        <div class="footer__social social">
+            
+            <a href="#" class="social__link" title="перейти в vk">
+                <svg class="social__img vk" width="20" height="20">
+                    <use xlink:href="sprite.symbol.svg#vk"></use>
+                </svg>
+            </a>
+            <a href="#" class="social__link" title="перейти на facebock">
+                <svg class="social__img facebook" width="20" height="20">
+                    <use xlink:href="sprite.symbol.svg#facebook"></use>
+                </svg>
+            </a>
+            <a href="#" class="social__link" title="перейти на youtube">
+                <svg class="social__img youtube" width="40" height="20">
+                    <use xlink:href="sprite.symbol.svg#youtube"></use>
+                </svg>
+            </a>
+            <a href="#" class="social__link" title="перейти в twitter">
+                <svg class="social__img twitter" width="20" height="20">
+                    <use xlink:href="sprite.symbol.svg#twitter"></use>
+                </svg>
+            </a>
+            <a href="#" class="social__link " title="перейти в instagram">
+                <svg class="social__img instagram" width="20" height="20">
+                    <use xlink:href="sprite.symbol.svg#instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="social__link" title="перейти в odnoklassniki">
+                <svg class="social__img odnoklassniki" width="20" height="20">
+                    <use xlink:href="sprite.symbol.svg#odnoklassniki"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
